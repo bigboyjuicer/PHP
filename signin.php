@@ -25,7 +25,7 @@
                 </div>
                 <div class="form-group">
                 <label> Password </label>
-                <input type='text' name='password' value="<?php if(isset($_COOKIE['password'])) echo $_COOKIE['password']; ?>" class='form-control'>
+                <input type='password' name='password' value="<?php if(isset($_COOKIE['password'])) echo $_COOKIE['password']; ?>" class='form-control'>
                 </div>
                 <div class="form-group">
                 <input type='checkbox' name='remember' class="btn btn-info"> <label> Запомнить меня </label>
