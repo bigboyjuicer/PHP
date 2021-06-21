@@ -48,12 +48,13 @@
                     echo('<div class="row justify-content-center"> <font size="+2"> Неверный логин или пароль </font> </div>');
                     die();
                 }
+                if(isset($_POST['remember'])){
+                    setcookie('username', $_POST['username'], time()+60*60*24*365);
+                    setcookie('password', $_POST['password'], time()+60*60*24*365);
+                    header('Location: main.php');
+                }
+                header('Location: main.php');
             }
-        }
-        if(isset($_POST['remember'])){
-            setcookie('username', $_POST['username'], time()+60*60*24*365);
-            setcookie('password', $_POST['password'], time()+60*60*24*365);
-            header('Location: main.php');
         }
     ?>
 </body>
