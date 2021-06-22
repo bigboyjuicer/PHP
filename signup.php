@@ -12,7 +12,7 @@
         </br>
         </div>
         <div class="row justify-content-center">
-        <form name='insert' action='' method='POST'>
+        <form name='' action='' method='POST'>
             <br>
             <div class="form-group">
             <label> Login </label>

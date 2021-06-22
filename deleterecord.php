@@ -11,16 +11,18 @@
     ?>
     <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
     <div class="container-fluid">
-        <a href='main.php' class="navbar-brand" href="#">
+        <a href='main.php' class="navbar-brand">
         <img src="https://img.icons8.com/wired/64/000000/ambulance.png" alt="" width="45" height="45">
         Запись к врачу</a>
         <div class="row justify-content-end">
-        <form name='insert' action='' method='POST'>
+        <form name='' action='' method='POST'>
                 <div class="row justify-content-around">
-                    <font size="+2">   
+                    <font size="+2">
+                    <a href='' class="navbar-brand">   
                     <?php
                         echo($_COOKIE['username']);
                     ?>
+                    </a>
                     </font>
                 </div>
                 <input type='submit' name='delete' value='Выйти из аккаунта' class="btn btn-outline-dark btn-sm">
