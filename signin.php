@@ -13,7 +13,7 @@
         else{ ?>
             <div class="row justify-content-center" >
             <br>
-            <th> <font size="+4"> Пожалуйста войдите в свой аккаунт </font> </th>
+            <th> <font size="+3"> Пожалуйста войдите в свой аккаунт </font> </th>
             </br>
             </div>
             <div class="row justify-content-center">
@@ -51,7 +51,6 @@
                 if(isset($_POST['remember'])){
                     setcookie('username', $_POST['username'], time()+60*60*24*365);
                     setcookie('password', $_POST['password'], time()+60*60*24*365);
-                    header('Location: main.php');
                 }
                 header('Location: main.php');
             }

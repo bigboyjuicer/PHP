@@ -16,7 +16,7 @@
             <br>
             <div class="form-group">
             <input type='submit' name='sign-in' value='Войти' class="btn btn-danger">
-            <input type='submit' name='sign-up' value='Зарегестрироваться' class="btn btn-info">
+            <input type='submit' name='sign-up' value='Зарегистрироваться' class="btn btn-info">
             </div>
         </div>
         </form>

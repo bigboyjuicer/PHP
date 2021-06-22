@@ -8,7 +8,7 @@
      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <div class="row justify-content-center" >
         <br>
-        <th> <font size="+4"> Пожалуйста зарегистрируйтесь </font> </th>
+        <th> <font size="+3"> Пожалуйста зарегистрируйтесь </font> </th>
         </br>
         </div>
         <div class="row justify-content-center">
