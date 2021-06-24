@@ -28,14 +28,11 @@
                 <input type='password' name='password' value="<?php if(isset($_COOKIE['password'])) echo $_COOKIE['password']; ?>" class='form-control'>
                 </div>
                 <div class="form-group">
-                <input type='checkbox' name='remember' class="btn btn-info"> <label> Запомнить меня </label>
-                </div>
-                <div class="form-group">
                 <input type='submit' name='log-in' value='Войти' class="btn btn-info">
                 <a href="auth.php" class="btn btn-danger">Назад</a>
                 </div>
             </form>
-            </div>   
+            </div>
         <?php }
         if(isset($_POST['log-in'])){
             if(isset($_POST['username']) and isset($_POST['password'])){
@@ -48,10 +45,8 @@
                     echo('<div class="row justify-content-center"> <font size="+2"> Неверный логин или пароль </font> </div>');
                     die();
                 }
-                if(isset($_POST['remember'])){
-                    setcookie('username', $_POST['username'], time()+60*60*24*365);
-                    setcookie('password', $_POST['password'], time()+60*60*24*365);
-                }
+                setcookie('username', $_POST['username'], time()+60*60*24*365);
+                setcookie('password', $_POST['password'], time()+60*60*24*365);
                 header('Location: main.php');
             }
         }
