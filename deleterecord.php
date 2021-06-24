@@ -48,7 +48,7 @@
             <form name='insert' action='' method='POST'>
                 <br>
                 <input type='submit' value='Отменить' name='deletebtn' class="btn btn-primary"></a>
-                <a href="main.php" class="btn btn-danger">Назад</a>
+                <a href="зкщашд.php" class="btn btn-danger">Назад</a>
                 </div>
             </form>
     </div>
@@ -60,7 +60,7 @@
             $username = $_COOKIE['username'];
             $db = pg_connect("host='localhost' dbname='php_project' user='postgres' password='123'");
             $result = pg_query($db, "delete from record where doctor = '$id' and username = '$username'");
-            header('Location: main.php');
+            header('Location: profile.php');
         }
     ?>
 </body>
